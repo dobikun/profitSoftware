@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    
+    <servlet>
+        <servlet-name>AddTrip</servlet-name>
+        <servlet-class>com.bustrip.controllers.AddTrip</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddTrip</servlet-name>
+        <url-pattern>/addTrip.jsp</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AddPassenger</servlet-name>
+        <servlet-class>com.bustrip.controllers.AddPassenger</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddPassenger</servlet-name>
+        <url-pattern>/addPassengers.jsp</url-pattern>
+    </servlet-mapping>
+   
+    <servlet>
+        <servlet-name>AddDriverOnTrip</servlet-name>
+        <servlet-class>com.bustrip.controllers.AddDriverOnTrip</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddDriverOnTrip</servlet-name>
+        <url-pattern>/driverOnTrip.jsp</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AddPassengerOnTrip</servlet-name>
+        <servlet-class>com.bustrip.controllers.AddPassengerOnTrip</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddPassengerOnTrip</servlet-name>
+        <url-pattern>/addOn.jsp</url-pattern>
+    </servlet-mapping>
+   
+    <servlet>
+        <servlet-name>Passengers</servlet-name>
+        <servlet-class>com.bustrip.controllers.Passengers</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Passengers</servlet-name>
+        <url-pattern>/passengers.jsp</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Trips</servlet-name>
+        <servlet-class>com.bustrip.controllers.Trips</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Trips</servlet-name>
+        <url-pattern>/trips.jsp</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AddDriver</servlet-name>
+        <servlet-class>com.bustrip.controllers.AddDriver</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddDriver</servlet-name>
+        <url-pattern>/addDriver.jsp</url-pattern>
+    </servlet-mapping>
+</web-app>
